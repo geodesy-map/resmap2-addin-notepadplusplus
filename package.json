@@ -1,0 +1,29 @@
+{
+    "name": "resmap2-agent-notepadplusplus",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "private": false,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "echo 'Linting JavaScript/TypeScript files'"
+        ],
+        "*.{json,md,html,css}": [
+            "echo 'Linting other files'"
+        ]
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^20.1.0",
+        "@commitlint/config-conventional": "^20.0.0",
+        "@commitlint/format": "^20.0.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.2.7"
+    }
+}
